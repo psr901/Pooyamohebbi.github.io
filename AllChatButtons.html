@@ -5,8 +5,8 @@
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FFAD00;
-	}
+		outline: 1px solid #FFAD00; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }	
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -14,13 +14,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'de'; //For example, enter 'en' or 'en-US'
-
 		embedded_svc.settings.defaultMinimizedText = 'Chatte mit einem Experten'; //(Defaults to Chat with an Expert)
 		embedded_svc.settings.disabledMinimizedText = 'Agent offline' ; //(Defaults to Agent Offline)
-
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -28,11 +25,9 @@
 		//};
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		embedded_svc.settings.offlineSupportMinimizedText = 'Kontaktiere Sie uns'; //(Defaults to Contact Us)
-
+		//embedded_svc.settings.offlineSupportMinimizedText = 'Kontaktiere Sie uns'; //(Defaults to Contact Us)
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
 		embedded_svc.init(
 			'https://flixbus.my.salesforce.com',
 			'https://flixbus-partners.force.com/Chat',
@@ -49,7 +44,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://flixbus.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -71,8 +65,8 @@
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FFAD00;
-	}
+		outline: 1px solid #FFAD00; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -80,13 +74,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
-
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
+		embedded_svc.settings.defaultMinimizedText = 'Chat with us'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Agent Offline'; //(Defaults to Agent Offline)
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -95,10 +86,8 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
 		embedded_svc.init(
 			'https://flixbus.my.salesforce.com',
 			'https://flixbus-partners.force.com/Chat',
@@ -115,7 +104,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://flixbus.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -137,8 +125,8 @@
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FFAD00;
-	}
+		outline: 1px solid #FFAD00; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -146,13 +134,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'en'; //For example, enter 'en' or 'en-US'
-
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
+		embedded_svc.settings.defaultMinimizedText = 'Chat with us'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Agent Offline'; //(Defaults to Agent Offline)
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -161,10 +146,8 @@
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
 		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
 		embedded_svc.init(
 			'https://flixbus.my.salesforce.com',
 			'https://flixbus-partners.force.com/Chat',
@@ -181,7 +164,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://flixbus.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -202,8 +184,8 @@
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FFAD00;
-	}
+		outline: 1px solid #FFAD00; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -211,13 +193,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
-
 		embedded_svc.settings.defaultMinimizedText = 'Chatte avec un expert'; //(Defaults to Chat with an Expert)
 		embedded_svc.settings.disabledMinimizedText = 'Agent indisponible'; //(Defaults to Agent Offline)
-
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -225,11 +204,9 @@
 		//};
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		embedded_svc.settings.offlineSupportMinimizedText = 'Nous contacter'; //(Defaults to Contact Us)
-
+		//embedded_svc.settings.offlineSupportMinimizedText = 'Nous contacter'; //(Defaults to Contact Us)
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
 		embedded_svc.init(
 			'https://flixbus.my.salesforce.com',
 			'https://flixbus-partners.force.com/Chat',
@@ -246,7 +223,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://flixbus.my.salesforce.com/embeddedservice/5.0/esw.min.js');
@@ -267,8 +243,8 @@
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #FFAD00;
-	}
+		outline: 1px solid #FFAD00; }
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -276,13 +252,10 @@
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'pl'; //For example, enter 'en' or 'en-US'
-
 		embedded_svc.settings.defaultMinimizedText = 'Rozpocznij chat z Ekspertem'; //(Defaults to Chat with an Expert)
 		embedded_svc.settings.disabledMinimizedText = 'Agent niedostępny'; //(Defaults to Agent Offline)
-
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
 		// Settings for Live Agent
 		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
 			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
@@ -290,11 +263,9 @@
 		//};
 		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
 		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		embedded_svc.settings.offlineSupportMinimizedText = 'Skontaktuj się z nami'; //(Defaults to Contact Us)
-
+		//embedded_svc.settings.offlineSupportMinimizedText = 'Skontaktuj się z nami'; //(Defaults to Contact Us)
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
-
 		embedded_svc.init(
 			'https://flixbus.my.salesforce.com',
 			'https://flixbus-partners.force.com/Chat',
@@ -311,7 +282,6 @@
 			}
 		);
 	};
-
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
 		s.setAttribute('src', 'https://flixbus.my.salesforce.com/embeddedservice/5.0/esw.min.js');
