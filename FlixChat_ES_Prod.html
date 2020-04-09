@@ -1,6 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+
+<p>
+    <img src="https://pooyamohebbi.github.io/Flixbus_en1.JPG" style='width:100%;' border="0" alt="Null">
+		
+   </a>
+</p>
+
+
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #FFAD00;
+	.embeddedServiceHelpButton .helpButton .uiButton.helpButtonDisabled { background-color:#8b8b8b; }		
 		font-family: "Roboto", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
@@ -12,10 +28,10 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = 'es'; //For example, enter 'en' or 'en-US'
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+		embedded_svc.settings.defaultMinimizedText = 'Chatea con nosotros'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Chat fuera de conexión'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
