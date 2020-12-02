@@ -64,6 +64,7 @@
 			}
 		);
 	};
+	const urlParams = new URLSearchParams(window.location.search);
 	const language = urlParams.get('language');
     embedded_svc.settings.language = language; //For example, enter 'en' or 'en-US'
     //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
@@ -73,7 +74,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         const language = urlParams.get('language');
         // english = en_US | german = de | french = fr | italian = it
-        if(prechatFormData[3].value === "Passengers with disabilities"){
+	    console.log("Category: " + prechatFormData[3].value);
+	    if(prechatFormData[3].value === "Passengers with disabilities"){
             return '5737a000000Cao1';
         }
 }
