@@ -64,21 +64,22 @@
 			}
 		);
 	};
+	console.log("Category: " + prechatFormData[3].value);
 	//const urlParams = new URLSearchParams(window.location.search);
-	const language = 'de'; //urlParams.get('language');
-    embedded_svc.settings.language = language; //For example, enter 'en' or 'en-US'
+	//const language = 'de'; //urlParams.get('language');
+   // embedded_svc.settings.language = language; //For example, enter 'en' or 'en-US'
     //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
     //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
    
-    embedded_svc.snippetSettingsFile.directToButtonRouting = function(prechatFormData) {
+    //embedded_svc.snippetSettingsFile.directToButtonRouting = function(prechatFormData) {
         //const urlParams = new URLSearchParams(window.location.search);
-        const language = 'de'; //urlParams.get('language');
+        //const language = 'de'; //urlParams.get('language');
         // english = en_US | german = de | french = fr | italian = it
-	    console.log("Category: " + prechatFormData[3].value);
-	    if(prechatFormData[3].value === "Passengers with disabilities"){
-            return '5737a000000Cao1';
-        }
-}
+	    //console.log("Category: " + prechatFormData[3].value);
+	    //if(prechatFormData[3].value === "Passengers with disabilities"){
+            //return '5737a000000Cao1';
+  //      }
+//};
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
