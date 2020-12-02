@@ -71,8 +71,8 @@
     //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
    
     embedded_svc.snippetSettingsFile.directToButtonRouting = function(prechatFormData) {
-        const urlParams = new URLSearchParams(window.location.search);
-        const language = urlParams.get('language');
+        //const urlParams = new URLSearchParams(window.location.search);
+        const language = 'de'; //urlParams.get('language');
         // english = en_US | german = de | french = fr | italian = it
 	    console.log("Category: " + prechatFormData[3].value);
 	    if(prechatFormData[3].value === "Passengers with disabilities"){
